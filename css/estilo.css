@@ -26,6 +26,7 @@ article h2{
   font: normal 18px Candara;
   margin: 15px;
   color: #007FB5;
+	cursor: pointer;
 }
 
 article p{
@@ -40,4 +41,9 @@ table{
 
 table td{
 	padding-top: 10px;
+}
+
+#volver{
+	margin-top: 15px;
+	margin-left: 15px;
 }

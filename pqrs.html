@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>PQRS</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jquery-1.6.3.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
@@ -15,37 +17,44 @@
 
     <!-- start main content-->
     <section>
-      <article>
+      <article class="opcion">
         <h2>Peticiones</h2>
         <p>La petición es una solicitud, un pedido que alguien efectúa a otro para lograr alguna concesión,
           la que puede hacerse en tono de ruego o bajo amenazas o advertencias, pudiendo efectuarse por cualquier
           medio de comunicación y en forma oral o escrita.
         </p>
       </article>
-      <article>
+      <article class="opcion">
           <h2>Quejas</h2>
           <p>Una queja es un escrito o comunicación a través del cual se pone de manifiesto la insatisfacción de una
             persona usuaria en relación con el servicio recibido por parte de, por ejemplo, una organización.
           </p>
       </article>
-      <article>
+      <article class="opcion">
         <h2>Reclamos</h2>
         <p>Una reclamación es una petición, una demanda que una persona plantea ante otra con el objetivo de resolver
           un problema concreto. Una reclamación también puede realizarse ante una institución específica o ante un
           comercio. Los clientes tienen derechos como consumidores de defender esos derechos ante el establecimiento.
         </p>
       </article>
-      <article>
+      <article class="opcion">
         <h2>Sugerencias</h2>
         <p>El concepto de sugerencia dispone de un uso extendido en nuestro idioma y además es una cuestión que las
           personas realizamos muchísimo en diversas situaciones y contextos, porque la sugerencia es la proposición
           o insinuación de una idea frente a una cuestión que lo genera. Y normalmente en nuestro idioma solemos usar
           la palabra como sinónimo de consejo y de recomendación.
         </p>
+      </article>
+
         <!--- end main content-->
+
+
 
         <!-- Start form-->
         <article>
+
+          <input type="button" id="volver" value="Volver">
+          
           <form id="form" action="" method="post">
             <table>
               <tr>
@@ -69,18 +78,21 @@
                 <td><input type="text" id="apellido"></td>
               </tr>
               <tr>
-                <td><label for="comentarios" id="label">Petición</label></td>
+                <td><label for="comentarios" id="label"></label></td>
               </tr>
               <tr>
                 <td colspan="2"><textarea name="comentarios"  id="comentarios" rows="8" cols="80"></textarea></td>
+              </tr>
+              <tr>
+                <td><input type="submit" id="enivar" value="Enviar"></td>
               </tr>
             </table>
 
           </form>
         </article>
-      </article>
+
       <!-- end form-->
-    </section>
+</section>
     <footer></footer>
   </body>
 </html>
