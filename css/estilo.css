@@ -34,3 +34,10 @@ article p{
   width: 1000px;
   text-align: justify;
 }
+table{
+	margin: 30px auto;
+}
+
+table td{
+	padding-top: 10px;
+}
