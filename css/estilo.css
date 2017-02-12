@@ -1,0 +1,36 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote{
+	padding:0; margin:0; font-size:100%; font-weight:normal; }
+table{border-collapse:collapse;	border-spacing:0; }
+td, th, caption{font-weight:normal; text-align:left; }
+img, fieldset{ border:0; }
+ol{ padding-left: 1.4em; list-style:decimal; }
+ul{ padding-left: 1.4em; list-style:square; }
+q:before, q:after{ content:''; }
+
+/*Fin Del Reset*/
+
+body{
+  width: 1200px;
+  margin: 0px auto;
+}
+
+h1{
+  text-align: center;
+  font: normal 24px Candara;
+  margin: 0px auto 20px auto;
+  padding: 15px;
+  color: #0096D6;
+}
+
+article h2{
+  font: normal 18px Candara;
+  margin: 15px;
+  color: #007FB5;
+}
+
+article p{
+  font: normal 14px Candara;
+  margin: 15px;
+  width: 1000px;
+  text-align: justify;
+}
