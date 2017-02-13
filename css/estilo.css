@@ -10,7 +10,7 @@ q:before, q:after{ content:''; }
 /*Fin Del Reset*/
 
 body{
-  width: 1200px;
+  width: 1100px;
   margin: 0px auto;
 }
 
@@ -41,9 +41,4 @@ table{
 
 table td{
 	padding-top: 10px;
-}
-
-#volver{
-	margin-top: 15px;
-	margin-left: 15px;
 }
