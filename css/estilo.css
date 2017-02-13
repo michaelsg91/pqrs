@@ -28,7 +28,10 @@ article h2{
   color: #007FB5;
 	cursor: pointer;
 }
-
+.volver{
+	color: #007FB5;
+ 	cursor: pointer;
+}
 article p{
   font: normal 14px Candara;
   margin: 15px;
@@ -41,4 +44,9 @@ table{
 
 table td{
 	padding-top: 10px;
+}
+
+label.error{
+  color: red;
+	margin-left: 10px;
 }

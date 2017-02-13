@@ -4,7 +4,7 @@ if(isset($_POST["nombre"])){
   $asunto=$_POST["opcion"];
   $remitente=$_POST["correo"];
   $mensaje .="Tipo de documento: ". $_POST['documento'] . "\n";
-  $mensaje .="Número de documento: ". $_POST['numDoc'] . "\n";
+  $mensaje .="Número de documento: ". $_POST['doc'] . "\n";
   $mensaje .="Nombre: ". $_POST['nombre'] . "\n";
   $mensaje .="Apellido(s): ". $_POST['apellido'] . "\n\n\n";
   $mensaje .="Comentario: \n". $_POST['comentarios'] . "\n";

@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>PQRS</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/jquery-1.6.3.min.js"></script>
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -52,12 +55,12 @@
 
         <!-- Start form-->
         <article>
-
-          <form id="form" action="php/enviarMail.php" method="post">
+          <p class="volver">Volver</p>
+          <form id="form" action="" method="post">
             <table>
               <tr>
                 <td>Tipo de documento:</td>
-                <td><select id="document" name="documento">
+                <td><select id="documento" name="documento">
                   <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
                   <option value="Cédula de extranjería">Cédula de extranjería</option>
                   <option value="Tarjeta de identidad">Tarjeta de identidad</option>
@@ -65,7 +68,7 @@
               </tr>
               <tr>
                 <td>Número de documento:</td>
-                <td><input type="text" name="numDoc" id="numDoc"></td>
+                <td><input type="text" name="doc" id="doc"></td>
               </tr>
               <tr>
                 <td>Nombre:</td>
@@ -77,7 +80,7 @@
               </tr>
               <tr>
                 <td>Correo electrónico:</td>
-                <td><input type="text" name="correo" id="correo"></td>
+                <td><input type="email" name="correo" id="correo"></td>
               </tr>
               <tr>
                 <td><label for="comentarios" id="label"></label></td>
