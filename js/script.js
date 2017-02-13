@@ -1,6 +1,7 @@
 $(document).ready(function(){
 $("#form").hide();
 $("#volver").hide();
+$("#op").hide();
 
 var elementos=document.querySelectorAll("h2");
 
@@ -10,16 +11,18 @@ $(".opcion").toggle(function(e){
   $(".opcion").fadeOut(1000);
   $(this).fadeIn(1000);
   if(e.target==elementos[0]){
-  document.getElementById('label').innerHTML="Petición:";
+  document.getElementById('label').innerHTML="Petición";
   }else if(e.target==elementos[1]){
-  document.getElementById('label').innerHTML="Queja:";
+  document.getElementById('label').innerHTML="Queja";
 }else if(e.target==elementos[2]){
-  document.getElementById('label').innerHTML="Reclamo:";
+  document.getElementById('label').innerHTML="Reclamo";
 }else if(e.target==elementos[3]){
-  document.getElementById('label').innerHTML="Sugerencia:";
+  document.getElementById('label').innerHTML="Sugerencia";
   }
+  $("#op").val(document.getElementById('label').innerHTML);
+
 },
-function(){
+function(e){
   $("#volver").fadeOut(1000);
   $("#form").fadeOut(1000);
   $(".opcion").fadeIn(1000);
@@ -27,12 +30,11 @@ function(){
 );
 
 
-$("#volver").click(function(){
+$("#volver").click(function(e){
   $("#volver").fadeOut(1000);
   $("#form").fadeOut(1000);
   $(".opcion").fadeIn(1000);
-  return false;
-});
 
+});
 
 });
