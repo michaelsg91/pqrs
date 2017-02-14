@@ -46,7 +46,8 @@ $("#form").validate({
     apellido:"required",
     doc:{
       number: true,
-      range: [6,14],
+      minlength: 6,
+      maxlength: 14,
       required: true
     },
 
@@ -63,7 +64,8 @@ $("#form").validate({
     apellido:"Campo requerido",
     doc:{
       number:"Formato no válido",
-      range:"Rango permitido: 6-14",
+      minlength: "Mínimo 6 digitos",
+      maxlength: "Máximo 14 digitos",
       required:"Campo requerido"
     },
 

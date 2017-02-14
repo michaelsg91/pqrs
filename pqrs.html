@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>PQRS</title>
@@ -13,7 +13,7 @@
   <body>
     <header>
       <figure>
-        <img src="img/logoUCC.png">
+        <img src="img/logoUCC.png" alt="Logo Universidad Cooperativa de Colombia">
       </figure>
       <h1>Peticiones, quejas, reclamos, sugerencias</h1>
     </header>
@@ -21,27 +21,35 @@
     <!-- start main content-->
     <section>
       <article class="opcion">
-        <h2>Peticiones</h2>
+        <header>
+          <h2>Peticiones</h2>
+        </header>
         <p>La petición es una solicitud, un pedido que alguien efectúa a otro para lograr alguna concesión,
           la que puede hacerse en tono de ruego o bajo amenazas o advertencias, pudiendo efectuarse por cualquier
           medio de comunicación y en forma oral o escrita.
         </p>
       </article>
       <article class="opcion">
+        <header>
           <h2>Quejas</h2>
+        </header>
           <p>Una queja es un escrito o comunicación a través del cual se pone de manifiesto la insatisfacción de una
             persona usuaria en relación con el servicio recibido por parte de, por ejemplo, una organización.
           </p>
       </article>
       <article class="opcion">
-        <h2>Reclamos</h2>
+        <header>
+          <h2>Reclamos</h2>
+        </header>
         <p>Una reclamación es una petición, una demanda que una persona plantea ante otra con el objetivo de resolver
           un problema concreto. Una reclamación también puede realizarse ante una institución específica o ante un
           comercio. Los clientes tienen derechos como consumidores de defender esos derechos ante el establecimiento.
         </p>
       </article>
       <article class="opcion">
-        <h2>Sugerencias</h2>
+        <header>
+          <h2>Sugerencias</h2>
+        </header>
         <p>El concepto de sugerencia dispone de un uso extendido en nuestro idioma y además es una cuestión que las
           personas realizamos muchísimo en diversas situaciones y contextos, porque la sugerencia es la proposición
           o insinuación de una idea frente a una cuestión que lo genera. Y normalmente en nuestro idioma solemos usar
@@ -54,9 +62,11 @@
 
 
         <!-- Start form-->
-        <article>
-          <p class="volver">Volver</p>
-          <form id="form" action="" method="post">
+          <article class="volver">
+            <p>Volver</p>
+          </article>
+
+          <form id="form" action="php/enviarMail.php" method="post">
             <table>
               <tr>
                 <td>Tipo de documento:</td>
@@ -90,12 +100,12 @@
                 <td colspan="2"><textarea name="comentarios"  id="comentarios" rows="8" cols="80"></textarea></td>
               </tr>
               <tr>
-                <td><input type="submit" name="enivar" value="Enviar"></td>
+                <td colspan="2"><input type="submit" name="enivar" value="Enviar"></td>
               </tr>
             </table>
 
           </form>
-        </article>
+
 
       <!-- end form-->
 </section>
