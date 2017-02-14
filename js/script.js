@@ -38,7 +38,6 @@ $(".volver").click(function(e){
 });
 //------- End toggle function -----------------------------
 
-
 //------- Start validate function ------------------
 $("#form").validate({
   rules:{
@@ -47,7 +46,7 @@ $("#form").validate({
     doc:{
       number: true,
       minlength: 6,
-      maxlength: 14,
+      maxlength: 13,
       required: true
     },
 
@@ -65,7 +64,7 @@ $("#form").validate({
     doc:{
       number:"Formato no válido",
       minlength: "Mínimo 6 digitos",
-      maxlength: "Máximo 14 digitos",
+      maxlength: "Máximo 13 digitos",
       required:"Campo requerido"
     },
 
