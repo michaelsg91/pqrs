@@ -56,7 +56,10 @@
           la palabra como sinónimo de consejo y de recomendación.
         </p>
       </article>
+
         <!--- end main content-->
+
+
 
         <!-- Start form-->
           <article class="volver">
@@ -65,6 +68,28 @@
 
           <form id="form" action="php/enviarMail.php" method="post">
             <table>
+              <tr>
+                <td>Motivo:</td>
+                <td class="motPet"><select id="motPet" name="motPet">
+                  <option value="Petición general">Petición general</option>
+                  <option value="Petición particular">Petición particular</option>
+                  <option value="Petición informal">Petición informal</option>
+                </select></td>
+                <td class="motQej"><select id="motQej" name="motQej">
+                  <option value="Queja general">Queja general</option>
+                  <option value="Queja particular">Queja particular</option>
+                  <option value="Queja informal">Queja informal</option>
+                </select></td>
+                <td class="motRec"><select id="motRec" name="motRec">
+                  <option value="Reclamo general">Reclamo general</option>
+                  <option value="Reclamo particular">Reclamo particular</option>
+                  <option value="Reclamo informal">Reclamo informal</option>
+                </select></td>
+                <td class="motSug"><select id="motSug" name="motSug">
+                  <option value="Sugerencia general">Sugerencia general</option>
+                  <option value="Sugerencia particular">Sugerencia particular</option>
+                  <option value="Sugerencia informal">Sugerencia informal</option>
+                </select></td>
               <tr>
                 <td>Tipo de documento:</td>
                 <td><select id="documento" name="documento">
@@ -100,7 +125,10 @@
                 <td colspan="2"><input type="submit" name="enivar" value="Enviar"></td>
               </tr>
             </table>
+
           </form>
+
+
       <!-- end form-->
 </section>
     <footer></footer>

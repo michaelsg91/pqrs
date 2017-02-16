@@ -5,6 +5,12 @@ $(document).ready(function(){
 $(".volver").hide();
 $("#form").hide();
 $("#op").hide();
+$(".motPet").hide();
+$(".motQej").hide();
+$(".motRec").hide();
+$(".motSug").hide();
+
+
 //------------------------
 
 var elementos=document.querySelectorAll("h2");//Seleccionando todos los elementos h2
@@ -15,12 +21,16 @@ $(".opcion").click(function(e){ //funcion de accion de dos cliks
   $(this).fadeIn(1000);
   if(e.target==elementos[0]){
   document.getElementById('label').innerHTML="Petición"; //Escribiendo en el objeto
+  $(".motPet").show();
   }else if(e.target==elementos[1]){
   document.getElementById('label').innerHTML="Queja";
+  $(".motQej").show();
 }else if(e.target==elementos[2]){
   document.getElementById('label').innerHTML="Reclamo";
+  $(".motRec").show();
 }else if(e.target==elementos[3]){
   document.getElementById('label').innerHTML="Sugerencia";
+  $(".motSug").show();
   }
   $("#op").val(document.getElementById('label').innerHTML); //Guardando valor del label
   $(".volver").show();
@@ -35,8 +45,14 @@ $(".volver").click(function(e){
   $("#form").fadeOut(1000);
   $(".opcion").fadeIn(1000);
   $(".volver").hide();
+  $(".motPet").hide();
+  $(".motQej").hide();
+  $(".motRec").hide();
+  $(".motSug").hide();
+
 });
 //------- End toggle function -----------------------------
+
 
 //------- Start validate function ------------------
 $("#form").validate({
