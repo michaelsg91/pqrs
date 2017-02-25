@@ -55,38 +55,39 @@ $(".volver").click(function(e){
 
 
 //------- Start validate function ------------------
+
+jQuery.validator.addMethod("lettersonly", function(value, element) {
+  return this.optional(element) || /^[a-z]+$/i.test(value);
+}, "Solo letras");
+
+
 $("#form").validate({
   rules:{
-    nombre:"required",
-    apellido:"required",
+    nombre:"lettersonly",
+    apellido: "lettersonly",
     doc:{
       number: true,
       minlength: 6,
       maxlength: 13,
-      required: true
     },
-
     correo:{
       email: true,
-      required: true
     },
     comentarios:"required"
 
   },//end rules
 
   messages:{
-    nombre:"Campo requerido",
-    apellido:"Campo requerido",
+    nombre:"Formato no valido",
+    apellido:"Formato no valido",
     doc:{
       number:"Formato no válido",
       minlength: "Mínimo 6 digitos",
       maxlength: "Máximo 13 digitos",
-      required:"Campo requerido"
     },
 
     correo:{
       email:"Formato no válido",
-      required:"Campo requerido"
     },
     comentarios:"Campo requerido"
   }
