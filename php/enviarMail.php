@@ -12,13 +12,29 @@ if($asunto=="Petición"){
   $motivo=$_POST["motSug"];
 }
 
+$documento=$_POST['documento'];
+if($documento==""){
+  $documento="No especificado";
+}
+$doc=$_POST['doc'];
+if($doc==""){
+  $doc="No especificado";
+}
+$nombre=$_POST['nombre'];
+if($nombre==""){
+  $nombre="No especificado";
+}
+$apellido=$_POST['apellido'];
+if($apellido==""){
+  $apellido="No especificado";
+}
   $destinatario="michael91sg@gmail.com";
   $remitente=$_POST["correo"];
   $mensaje .="Motivo: ". $motivo . "\n";
-  $mensaje .="Tipo de documento: ". $_POST['documento'] . "\n";
-  $mensaje .="Número de documento: ". $_POST['doc'] . "\n";
-  $mensaje .="Nombre: ". $_POST['nombre'] . "\n";
-  $mensaje .="Apellido(s): ". $_POST['apellido'] . "\n\n\n";
+  $mensaje .="Tipo de documento: ". $documento . "\n";
+  $mensaje .="Número de documento: ". $doc . "\n";
+  $mensaje .="Nombre: ". $nombre . "\n";
+  $mensaje .="Apellido(s): ". $apellido . "\n\n\n";
   $mensaje .="Comentario: \n". $_POST['comentarios'] . "\n";
 
   $headers="From: " . $remitente . "\r\n" .
